@@ -1,4 +1,4 @@
-gdal
+gdal==3.0.4
 gdal-utils
 
 boto3
