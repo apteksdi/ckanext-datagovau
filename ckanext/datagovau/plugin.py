@@ -11,7 +11,7 @@ import ckan.authz as authz
 import ckan.lib.jobs as jobs
 import ckan.lib.helpers as h
 
-from ckanext.xloader.plugin import xloaderPlugin
+#from ckanext.xloader.plugin import xloaderPlugin
 
 import ckanext.datagovau.helpers as helpers
 from ckanext.datagovau import validators, cli
@@ -38,8 +38,8 @@ def _dga_xnotify(self, resource):
         pass
 
 
-_original_xnotify = xloaderPlugin.notify
-xloaderPlugin.notify = _dga_xnotify
+#_original_xnotify = xloaderPlugin.notify
+#xloaderPlugin.notify = _dga_xnotify
 
 
 _original_permission_check = authz.has_user_permission_for_group_or_org
